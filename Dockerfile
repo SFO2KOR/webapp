@@ -1,4 +1,2 @@
 FROM nginx:latest
-WORKDIR /usr/share/nginx/html
-COPY index.html .
-RUN cat index.html
+COPY index.html  /usr/share/nginx/html
