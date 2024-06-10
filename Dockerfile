@@ -1,5 +1,3 @@
-FROM docker.io/surajmohanm/webapp:latest
-COPY index.html  /usr/share/nginx/html
-RUN cat /usr/share/nginx/html/index.html
-
-
+FROM nginx
+RUN echo testtt > /usr/share/nginx/html/test.txt
+RUN cat index.html > /usr/share/nginx/html/index.html
